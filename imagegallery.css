@@ -1,0 +1,56 @@
+.header{
+    background: linear-gradient(45deg,orangered,white,green );
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+    animation-name: colors;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes colors
+{
+    25%{
+        background: linear-gradient(45deg,blue,white,green);
+    }
+    50%
+    {
+        background: linear-gradient(45deg,yellow,white,red);
+    }
+    75%
+    {
+        background: linear-gradient(45deg,purple,white,gold);
+    }
+}
+.container{
+    border: solid 2px black;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px grey;
+   
+}
+.main_container{
+    display: flex;
+   justify-content: space-evenly;
+}
+.super_container{
+    margin-top: 100px;
+}
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    transition: all 3s;
+}
+img:hover{
+    transform: scale(1.2);
+}
